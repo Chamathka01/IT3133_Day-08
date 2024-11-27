@@ -15,6 +15,12 @@ function App() {
           <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>
+
+      <Routes>
+            <Route path='/home' element={<Home/>}/>
+            <Route path='/about' element={<AboutUs/>}/>
+            <Route path='/contact' element={<Contactus/>}/>
+        </Routes>
      </Router> 
     </div>
   );
