@@ -5,17 +5,20 @@ import '../login.css';
 export default function Login(){
     const navigate = useNavigate();
     const [user,setUser] = useState({ username: "",pwd:"",error: ""})
+    
     const getTextInput =(e)=>{
         const {name,value}=e.target;
         setUser((prevUser)=>({
-            ...prevUser,[name]:value,
+            ...prevUser,
+            [name]:value,
         }))
     }
 
     const authenticate=()=>{
-        if(useReducer.username === "Admin" && user.pwd === "abc@123"){
-            setUser({username: "", pwd: "",error:""})
+        if(user.username === "Admin" && user.pwd === "123"){
             navigate('/dash');
+            setUser({username: "", pwd: "",error:""})
+            
         }else{
             setUser({'error':"Please check your username and password"})
         }
