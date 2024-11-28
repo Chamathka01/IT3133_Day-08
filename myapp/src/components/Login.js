@@ -15,7 +15,7 @@ export default function Login(){
     }
 
     const authenticate=()=>{
-        if(user.username === "Admin" && user.pwd === "123"){
+        if(user.username === "Admin" && user.pwd === "abc@123"){
             navigate('/dash');
             setUser({username: "", pwd: "",error:""})
             
