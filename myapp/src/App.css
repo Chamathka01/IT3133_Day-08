@@ -1,42 +1,35 @@
 body {
   margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  background-color: #f8f9fa;
 }
 
 .App nav {
-  background-color: #09121bac;
+  background-color: #343a40;
   padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .App nav ul {
   list-style: none;
-  display: flex;
-  justify-content: center;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 .App nav ul li {
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 .App nav ul li a {
+  color: white;
   text-decoration: none;
-  color: #fff;
   font-size: 16px;
-  font-weight: bold;
-  transition: color 0.3s ease;
 }
 
 .App nav ul li a:hover {
-  color: #000;
-}
-
-.App nav ul li .active {
-  border-bottom: 2px solid #FFD700;
+  color: #17a2b8;
+  text-decoration: underline;
 }
 
 .App {
@@ -44,28 +37,7 @@ body {
   padding: 20px;
 }
 
-h1 {
-  font-size: 3em;
-  color: #1e1e91;
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 1em;
-  color: #666;
-  line-height: 1.5;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .App nav ul {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .App nav ul li {
-      margin: 10px 0;
-  }
-
-  
+.App h1 {
+  color: #343a40;
+  margin-top: 20px;
 }

@@ -1,5 +1,6 @@
 import { useReducer, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import '../login.css';
 
 export default function Login(){
     const navigate = useNavigate();
@@ -21,7 +22,7 @@ export default function Login(){
     }
 
     return(
-        <div>
+        <div className="login">
             <table>
                 <tr>
                     <td>Username:</td>
